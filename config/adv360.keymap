@@ -20,6 +20,8 @@
 
 #define DEFAULT 0
 #define SYMBOLS 1
+#define NUMBERS 2
+#define MOD 3
 
 #define HYPER LS(LC(LA(LGUI)))
 #define L_HRM(k1, k2, k3, k4) &hm LCTL k1 &hm LALT k2 &hm LGUI k3 &hm LSFT k4
@@ -46,11 +48,11 @@
 
         default_layer {
             bindings = <
-        &kp EQUAL    &kp   N1      &kp N2     &kp N3    &kp N4      &kp N5   &tog 1                                                               &mo 3               &kp N6   &kp   N7   &kp N8      &kp N9     &kp N0     &kp MINUS
-        &kp TAB      &kp   Q       &kp W      &kp F     &kp P       &kp B    &none                                                                &none               &kp J    &kp   L    &kp U       &kp Y      &kp SEMI   &kp BSLH
-        &kp ESC      L_HRM(A,          R,         S,        T)      &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL   &none               &kp M    R_HRM(N,       E,          I,         O)     &kp DQT
-        &kp LSHFT    &kp   Z       &kp X      &kp C     &kp D       &kp V                                      &kp HOME   &kp PG_UP                                   &kp K    &kp   H    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
-        &mo 2        &kp   GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT            &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &kp TAB     &lt SYMBOLS ENTER            &kp   UP   &kp DOWN    &kp LBKT   &kp RBKT   &mo 2
+        &kp EQUAL    &kp   N1      &kp N2     &kp N3    &kp N4      &kp N5   &none                                                                      &mo MOD             &kp N6   &kp   N7   &kp N8      &kp N9     &kp N0     &kp MINUS
+        &kp TAB      &kp   Q       &kp W      &kp F     &kp P       &kp B    &none                                                                      &none               &kp J    &kp   L    &kp U       &kp Y      &kp SEMI   &kp BSLH
+        &kp ESC      L_HRM(A,          R,         S,        T)      &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL         &none               &kp M    R_HRM(N,       E,          I,         O)     &kp DQT
+        &kp LSHFT    &kp   Z       &kp X      &kp C     &kp D       &kp V                                      &kp HOME   &kp PG_UP                                         &kp K    &kp   H    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
+        &none        &kp   GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT            &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &lt NUMBERS TAB   &lt SYMBOLS ENTER            &kp   UP   &kp DOWN    &kp LBKT   &kp RBKT   &mo 2
             >;
         };
 
@@ -64,13 +66,13 @@
             >;
         };
 
-        layer_keypad {
+        numbers_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none   &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp H   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                         &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp KP_N0              &kp UP      &kp DOWN     &kp KP_DOT         &kp RBKT      &mo 2
+        &trans   &trans   &trans   &trans   &trans   &trans   &trans                                          &trans   &trans   &trans   &trans   &trans   &trans   &trans
+        &trans   &trans   &trans   &trans   &trans   &trans   &trans                                          &trans   &trans   &trans   &trans   &trans   &trans   &trans
+        &trans   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &none    &trans   &trans      &trans   &trans   &trans   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &trans
+        &trans   &trans   &trans   &trans   &trans   &trans                     &trans      &trans                     &trans   &trans   &trans   &trans   &trans   &trans
+        &trans   &trans   &trans   &trans   &trans            &trans   &trans   &trans      &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans
             >;
         };
 
