@@ -19,6 +19,8 @@
 #include <dt-bindings/zmk/backlight.h>
 
 #define HYPER LS(LC(LA(LGUI)))
+#define L_HRM(k1, k2, k3, k4) &hm LCTL k1 &hm LALT k2 &hm LGUI k3 &hm LSFT k4
+#define R_HRM(k1, k2, k3, k4) &hm RSFT k1 &hm RGUI k2 &hm RALT k3 &hm RCTL k4
 
 / {
   behaviors {
@@ -33,17 +35,6 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-
-    lh_pht: left_hand_positional_hold_tap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LEFT_POSITIONAL_HOLD_TAP";
-        #binding-cells = <2>;
-        flavor = "tap-unless-interrupted";
-        tapping-term-ms = <100>;
-        quick-tap-ms = <200>;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-key-positions = <8 9 10 11 12 13 22 23 24 25 26 27 40 41 42 43 44 45 54 55 56 57 58>;
-    };
   };
 
     keymap {
@@ -52,11 +43,11 @@
 
         default_layer {
             bindings = <
-        &kp EQUAL    &kp N1           &kp N2           &kp N3           &kp N4           &kp N5   &tog 1                                                               &mo 3       &kp N6   &kp N7       &kp N8       &kp N9       &kp N0       &kp MINUS
-        &kp TAB      &kp Q            &kp W            &kp F            &kp P            &kp B    &none                                                                &none       &kp J    &kp L        &kp U        &kp Y        &kp SEMI     &kp BSLH
-        &kp ESC      &lh_pht LCTL A   &lh_pht LALT R   &lh_pht LGUI S   &lh_pht LSFT T   &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL   &none       &kp M    &hm RSFT N   &hm RGUI E   &hm RALT I   &hm RCTL O   &kp DOUBLE_QUOTES
-        &kp LSHFT    &kp Z            &kp X            &kp C            &kp D            &kp V                                      &kp HOME   &kp PG_UP                           &kp K    &kp H        &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
-        &mo 2        &kp GRAVE        &kp CAPS         &kp LEFT         &kp RIGHT                 &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &kp TAB     &kp ENTER            &kp UP       &kp DOWN     &kp LBKT     &kp RBKT     &mo 2
+        &kp EQUAL    &kp   N1      &kp N2     &kp N3    &kp N4      &kp N5   &tog 1                                                               &mo 3       &kp N6   &kp   N7 &kp N8      &kp N9     &kp N0     &kp MINUS
+        &kp TAB      &kp   Q       &kp W      &kp F     &kp P       &kp B    &none                                                                &none       &kp J    &kp   L  &kp U       &kp Y      &kp SEMI   &kp BSLH
+        &kp ESC      L_HRM(A,          R,         S,        T)      &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL   &none       &kp M    R_HRM(N,     E,          I,         O)     &kp DOUBLE_QUOTES
+        &kp LSHFT    &kp   Z       &kp X      &kp C     &kp D       &kp V                                      &kp HOME   &kp PG_UP                           &kp K    &kp   H  &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
+        &mo 2        &kp   GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT            &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &kp TAB     &kp ENTER            &kp   UP &kp DOWN    &kp LBKT   &kp RBKT   &mo 2
             >;
         };
 
