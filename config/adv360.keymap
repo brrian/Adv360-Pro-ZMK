@@ -57,7 +57,7 @@
 
         default_layer {
             bindings = <
-        &kp EQUAL    &kp   N1      &kp N2     &kp N3    &kp N4      &kp N5   &none                                                                      &mo MOD             &kp N6   &kp   N7   &kp N8      &kp N9     &kp N0     &ht C_PWR C_PLAY_PAUSE
+        &kp EQUAL    &kp   N1      &kp N2     &kp N3    &kp N4      &kp N5   &none                                                                      &mo MOD             &kp N6   &kp   N7   &kp N8      &kp N9     &kp N0     &ht C_SLEEP C_PLAY_PAUSE
         &kp TAB      &kp   Q       &kp W      &kp F     &kp P       &kp B    &none                                                                      &none               &kp J    &kp   L    &kp U       &kp Y      &kp SEMI   &kp BSLH
         &kp ESC      L_HRM(A,          R,         S,        T)      &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL         &none               &kp M    R_HRM(N,       E,          I,         O)     &kp DQT
         &kp LSHFT    &kp   Z       &kp X      &kp C     &kp D       &kp V                                      &kp HOME   &kp PG_UP                                         &kp K    &kp   H    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
