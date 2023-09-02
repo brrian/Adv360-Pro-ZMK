@@ -56,11 +56,11 @@
 
         symbols_layer {
             bindings = <
-        &trans        &trans      &trans     &trans     &trans   &trans   &trans                                          &trans   &trans      &trans      &trans      &trans      &trans     &trans
-        &trans        &kp POUND   &kp LBKT   &kp RBKT   &trans   &trans   &trans                                          &trans   &trans      &kp EXCL    &kp PLUS    &trans      &trans     &trans
-        &kp PERCENT   &kp DLLR    &kp LPAR   &kp RPAR   &trans   &trans   &none    &trans   &trans      &trans   &trans   &trans   &kp GRAVE   &kp EQUAL   &kp MINUS   &kp COLON   &kp SEMI   &kp SQT
-        &kp CARET     &kp AMPS    &kp LBRC   &kp RBRC   &trans   &trans                     &trans      &trans                     &trans      &trans      &kp UNDER   &kp LT      &kp GT     &trans
-        &trans        &trans      &trans     &trans     &trans            &trans   &trans   &trans      &trans   &trans   &trans               &trans      &trans      &trans      &trans     &trans
+        &trans   &trans        &trans      &trans     &trans     &trans   &trans                                          &trans   &trans      &trans      &trans      &trans      &trans     &trans
+        &trans   &trans        &kp POUND   &kp LBKT   &kp RBKT   &trans   &trans                                          &trans   &trans      &kp EXCL    &kp PLUS    &trans      &trans     &trans
+        &trans   &kp PERCENT   &kp DLLR    &kp LPAR   &kp RPAR   &trans   &none    &trans   &trans      &trans   &trans   &trans   &kp GRAVE   &kp EQUAL   &kp MINUS   &kp COLON   &kp SEMI   &kp SQT
+        &trans   &kp CARET     &kp AMPS    &kp LBRC   &kp RBRC   &trans                     &trans      &trans                     &trans      &kp UNDER   &kp LT      &kp GT      &trans     &trans
+        &trans   &trans        &trans      &trans     &trans              &trans   &trans   &trans      &trans   &trans   &trans               &trans      &trans      &trans      &trans     &trans
             >;
         };
 
