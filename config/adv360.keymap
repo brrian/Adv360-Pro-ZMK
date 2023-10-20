@@ -61,7 +61,7 @@
         &kp TAB      &kp   Q       &kp W      &kp F     &kp P       &kp B    &none                                                                      &none               &kp J    &kp   L    &kp U       &kp Y      &kp SEMI   &kp BSLH
         &kp ESC      L_HRM(A,          R,         S,        T)      &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL         &none               &kp M    R_HRM(N,       E,          I,         O)     &kp SQT
         &kp LSHFT    &kp   Z       &kp X      &kp C     &kp D       &kp V                                      &kp HOME   &kp PG_UP                                         &kp K    &kp   H    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
-        &none        &kp   GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT            &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &lt NUMBERS TAB   &lt SYMBOLS ENTER            &kp   UP   &kp DOWN    &kp LBKT   &kp RBKT   &ht LA(SPACE) LG(F5)
+        &none        &kp   GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT            &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &lt NUMBERS TAB   &lt SYMBOLS ENTER            &kp   UP   &kp DOWN    &kp LBKT   &kp RBKT   &kp LA(SPACE)
             >;
         };
 
@@ -71,7 +71,7 @@
         &trans   &trans        &kp POUND   &kp LBKT   &kp RBKT   &trans   &trans                                          &trans   &trans      &kp EXCL    &kp PLUS    &trans      &trans     &trans
         &trans   &kp PERCENT   &kp DLLR    &kp LPAR   &kp RPAR   &trans   &none    &trans   &trans      &trans   &trans   &trans   &kp GRAVE   &kp EQUAL   &kp MINUS   &kp COLON   &kp SEMI   &kp DQT
         &trans   &kp CARET     &kp AMPS    &kp LBRC   &kp RBRC   &trans                     &trans      &trans                     &trans      &kp UNDER   &kp LT      &kp GT      &trans     &trans
-        &trans   &trans        &trans      &trans     &trans              &trans   &trans   &trans      &trans   &trans   &trans               &trans      &trans      &trans      &trans     &trans
+        &trans   &trans        &trans      &trans     &trans              &trans   &trans   &trans      &trans   &trans   &trans               &trans      &trans      &trans      &trans     &kp LG(F5)
             >;
         };
 
