@@ -24,8 +24,6 @@
 #define MOD 3
 
 #define HYPER LS(LC(LA(LGUI)))
-#define L_HRM(k1, k2, k3, k4) &hm LCTL k1 &hm LALT k2 &hm LGUI k3 &hm LSFT k4
-#define R_HRM(k1, k2, k3, k4) &hm RSFT k1 &hm RGUI k2 &hm RALT k3 &hm RCTL k4
 
 / {
   behaviors {
@@ -57,11 +55,11 @@
 
         default_layer {
             bindings = <
-        &kp EQUAL    &kp   N1      &kp N2     &kp N3    &kp N4      &kp N5   &none                                                                      &mo MOD             &kp N6   &kp   N7   &kp N8      &kp N9     &kp N0     &ht C_PWR C_PLAY_PAUSE
-        &kp TAB      &kp   Q       &kp W      &kp F     &kp P       &kp B    &none                                                                      &none               &kp J    &kp   L    &kp U       &kp Y      &kp SEMI   &kp BSLH
-        &kp ESC      L_HRM(A,          R,         S,        T)      &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL         &none               &kp M    R_HRM(N,       E,          I,         O)     &kp SQT
-        &kp LSHFT    &kp   Z       &kp X      &kp C     &kp D       &kp V                                      &kp HOME   &kp PG_UP                                         &kp K    &kp   H    &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
-        &none        &kp   GRAVE   &kp CAPS   &kp LEFT  &kp RIGHT            &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &lt NUMBERS TAB   &lt SYMBOLS ENTER            &kp   UP   &kp DOWN    &kp LBKT   &kp RBKT   &kp LA(SPACE)
+        &kp EQUAL    &kp N1      &kp N2     &kp N3     &kp N4     &kp N5   &none                                                                      &mo MOD             &kp N6   &kp N7     &kp N8      &kp N9     &kp N0     &ht C_PWR C_PLAY_PAUSE
+        &kp TAB      &kp Q       &kp W      &kp F      &kp P      &kp B    &none                                                                      &none               &kp J    &kp L      &kp U       &kp Y      &kp SEMI   &kp BSLH
+        &kp ESC      &hm LCTL A  &hm LALT R &hm LGUI S &hm LSFT T &kp G    &none             &kp LCTRL       &kp LALT   &kp LGUI    &kp RCTRL         &none               &kp M    &hm RSFT N &hm RGUI E  &hm RALT E &hm RCTL O &kp SQT
+        &kp LSHFT    &kp Z       &kp X      &kp C      &kp D      &kp V                                      &kp HOME   &kp PG_UP                                         &kp K    &kp H      &kp COMMA   &kp DOT    &kp FSLH   &kp RSHFT
+        &none        &kp GRAVE   &kp CAPS   &kp LEFT   &kp RIGHT            &mt HYPER SPACE   &kp BACKSPACE   &kp END    &kp PG_DN   &lt NUMBERS TAB   &lt SYMBOLS ENTER           &kp UP     &kp DOWN    &kp LBKT   &kp RBKT   &kp LA(SPACE)
             >;
         };
 
