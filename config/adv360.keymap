@@ -55,11 +55,13 @@
     };
 
     macros {
-        ZMK_MACRO(macro_one,
+        macro_one: macro_one {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
-            bindings = <&kp t &kp e &kp s &kp t>;
-        )
+            bindings = <&kp T &kp E &kp S &kp T>;
+        };
     };
 
     keymap {
